@@ -1,0 +1,23 @@
+.menu-button > .arrow-button {
+    -fx-padding: 0;
+}
+
+.menu-button > .arrow-button > .arrow {
+    -fx-padding: 0;
+}
+
+.context-menu {
+    -fx-background-color: black;
+}
+
+.menu-item .label {
+    -fx-text-fill: #e3c322;
+}
+
+.menu-item:focused {
+    -fx-background-color: #e3c322;
+}
+
+.menu-item:focused .label {
+    -fx-text-fill: black;
+}

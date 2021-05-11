@@ -1,0 +1,10 @@
+.popup {
+    -fx-background-color: #31a36e;
+    -fx-font-size: 20;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+    -fx-wrap-text: true;
+    -fx-alignment: center;
+    -fx-pref-width: 800;
+    -fx-pref-height: 70;
+}
