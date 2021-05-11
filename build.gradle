@@ -1,0 +1,26 @@
+plugins {
+    id 'java'
+    id 'application'
+    id 'org.openjfx.javafxplugin' version '0.0.7'
+}
+
+group 'app'
+version '1.0'
+
+repositories {
+    mavenCentral()
+    google()
+}
+
+dependencies {
+    implementation 'com.google.http-client:google-http-client:1.39.2'
+    implementation 'com.jayway.jsonpath:json-path:2.5.0'
+    implementation 'com.google.code.gson:gson:2.8.6'
+}
+
+javafx {
+    version = '16'
+    modules = [ 'javafx.controls', 'javafx.fxml']
+}
+
+mainClassName = 'app.Main'
