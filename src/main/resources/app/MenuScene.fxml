@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.MenuSceneController">
+   <HBox alignment="CENTER" prefHeight="60.0" prefWidth="1200.0" style="-fx-background-color: #31a36e;">
+      <Button alignment="CENTER" mnemonicParsing="false" onAction="#switchToGameMenuScene" prefHeight="60.0" prefWidth="200.0" style="-fx-background-color: transparent;" text="Graj" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <graphic>
+            <ImageView fitHeight="43.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+               <Image url="@images/puzzle.png" />
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button alignment="CENTER" mnemonicParsing="false" onAction="#switchToProfileScene" prefHeight="60.0" prefWidth="200.0" style="-fx-background-color: transparent; -fx-border-width: 0 0 0 2; -fx-border-color: white;" text="Profil" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <graphic>
+            <ImageView fitHeight="48.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true">
+               <Image url="@images/person.png" />
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button alignment="CENTER" mnemonicParsing="false" onAction="#switchToFriendsScene" prefHeight="60.0" prefWidth="200.0" style="-fx-background-color: transparent; -fx-border-width: 0 0 0 2; -fx-border-color: white;" text="Znajomi" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <graphic>
+            <ImageView fitHeight="48.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/friends.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button alignment="CENTER" mnemonicParsing="false" onAction="#switchToNotificationsScene" prefHeight="60.0" prefWidth="200.0" style="-fx-background-color: transparent; -fx-border-width: 0 0 0 2; -fx-border-color: white;" text="Powiadomienia" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <graphic>
+            <ImageView fitHeight="40.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+               <Image url="@images/bell.png" />
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="adminSugestionsButton" alignment="CENTER" mnemonicParsing="false" onAction="#switchToSugestionsScene" prefHeight="60.0" prefWidth="200.0" style="-fx-background-color: transparent; -fx-border-width: 0 0 0 2; -fx-border-color: white;" text="Sugestie" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <graphic>
+            <ImageView fx:id="adminSugestionsIcon" fitHeight="38.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/help.png" />
+               </image></ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button alignment="CENTER" mnemonicParsing="false" onAction="#logout" prefHeight="60.0" prefWidth="200.0" style="-fx-background-color: transparent; -fx-border-width: 0 0 0 2; -fx-border-color: white;" text="Wyloguj się" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <graphic>
+            <ImageView fitHeight="39.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+               <Image url="@images/exit.png" />
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </HBox>
+   <AnchorPane fx:id="contentPane" layoutY="60.0" prefHeight="540.0" prefWidth="1200.0" style="-fx-border-width: 2 0 0 0; -fx-border-color: black;" />
+</AnchorPane>
